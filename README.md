@@ -1,10 +1,10 @@
 # video_downloader
 writing  html(xml)  code  to  predfine some download  manner  powerd by you-get
 
-##tag  explan
+## tag  
 -ul :will create a dirctory
 -li : the  content ,many time is  the  video page link  or  the pagelist link
-## attribution
+## attribution 
 - class : the directory's name 
 - pagelist: use  it   when you want to download more the one videos  from a pagelist 
   - all    download  all vidoes  of the pagelist

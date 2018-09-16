@@ -2,8 +2,8 @@
 writing  html(xml)  code  to  predfine some download  manner  powerd by you-get
 
 ## tag  
--ul :will create a dirctory
--li : the  content ,many time is  the  video page link  or  the pagelist link
+- ul :will create a dirctory
+- li : the  content ,many time is  the  video page link  or  the pagelist link
 ## attribution 
 - class : the directory's name 
 - pagelist: use  it   when you want to download more the one videos  from a pagelist 

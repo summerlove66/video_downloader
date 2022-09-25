@@ -2,8 +2,9 @@ import requests
 import lxml.html
 import random
 import importlib
+import os
 
-play_list_item = {'youtube': "youtube"}
+play_list_item = {'youtube': "youtube" ,"bilibili":"bilibili" }
 
 headers = {
 
@@ -16,7 +17,7 @@ def site_func(url, attr):
 
         if key in url:
             module = play_list_item.get(key)
-            site = importlib.import_module(module)
+            site = importlib.import_module("sites." + module)
             Obj = getattr(site, module.capitalize())
             # Obj= globals().get(play_list_item.get(key))
             print("obj", Obj)
@@ -44,7 +45,8 @@ class PalyListSite:
             return self.all_videos
         if self.play_site_attr.startswith("range"):
             play_list_strs = self.play_site_attr.split(":")
-            print(play_list_strs)
+            print(self.all_videos)
+            print(int(play_list_strs[1]), int(play_list_strs[2]))
 
             return self.all_videos[int(play_list_strs[1]): int(play_list_strs[2])]
         if self.play_site_attr.startswith("random"):

@@ -57,4 +57,4 @@ def parse_node(node, prefxi):
 
 
 if __name__ == '__main__':
-    parse_tree("v1.html", "E:\\my\\video")
+    parse_tree("v1.html", "E:\\video")
